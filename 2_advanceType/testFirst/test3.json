@@ -1,0 +1,25 @@
+{
+  "post": {
+    "sum": 1000,
+    "from": 2,
+    "to": 4
+  },
+  "get": [
+    {
+      "status": "success",
+      "data": {
+        "dataBaseId": 567,
+        "sum": 10000,
+        "from": 2,
+        "to": 4
+      }
+    },
+    {
+      "status": "failed",
+      "data": {
+        "errorMessage": "Недостаточно средств",
+        "errorCode": 4
+      }
+    }
+  ]
+}

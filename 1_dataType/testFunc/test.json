@@ -1,0 +1,15 @@
+{
+  "1": {
+    "topicId": 5,
+    "status": "published"
+  },
+  "2": [
+    {
+      "question": "Как осуществляется доставка ?",
+      "answer": "Быстро",
+      "tags": ["popular", "new"],
+      "likes": 3,
+      "status": "published"
+    }
+  ]
+}
