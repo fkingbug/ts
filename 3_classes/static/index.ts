@@ -9,6 +9,7 @@ class UserService {
   create() {
     UserService.db
   }
+  //в static{} только синхронный код
   static {
     UserService.db = 'sdf'
   }

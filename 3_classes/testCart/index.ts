@@ -46,6 +46,7 @@ class Cart {
   }
 }
 const cart = new Cart()
+
 cart.addProduct(new Product(1, 'Печенье', 10))
 cart.addProduct(new Product(2, 'Торт', 30))
 cart.addProduct(new Product(3, 'Шоколад', 20))
