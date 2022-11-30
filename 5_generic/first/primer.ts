@@ -1,4 +1,5 @@
 const number: Array<number> = [1, 2, 3]
+
 async function tesdt() {
   //Возвращает число
   const a = await new Promise<number>((resolve, reject) => {
@@ -53,5 +54,22 @@ function toString<T>(data: T): string | undefined {
 console.log(toString(1))
 console.log(toString('223'))
 console.log(toString(true))
-console.log(toString([1, 2, 3, , 4, 5]))
+console.log(toString([1, 2, 3, 4, 5]))
 console.log(toString({ name: 'qwe' }))
+
+const solit: <T>(data: Array<T>) => Array<T> = getSplitedHalf
+
+interface ILoLine<T> {
+  timeStamp: Date
+  date: T
+}
+type LogLineType<Y> = {
+  timeStamp: Date
+  date: Y
+}
+const logLine: ILoLine<{ a: number }> = {
+  timeStamp: new Date(),
+  date: {
+    a: 1,
+  },
+}
