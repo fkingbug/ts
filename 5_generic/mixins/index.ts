@@ -62,6 +62,7 @@ function ExtendedList<TBase extends ListType & AccordionType>(Base: TBase) {
 }
 //TBase extends ListType & AccordionType - наследуется от 2 классов и нужно передать класс который имеет в себе поля наследуемых классов
 //Миксин дает тайп чекинг + возможность добавки функционала к наслежуемым классам
+// миксины нужны для совмещения 2-ух областей и добавить им функционал
 const list = ExtendedList(AccordionList)
 const res = new list(['first', 'setcode'])
 console.log(res.isOpened)
